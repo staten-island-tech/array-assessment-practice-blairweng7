@@ -101,7 +101,14 @@ const titles = [
 
 //print a list of books that "includes" the genre historical
 
-
+function author () {
+  books.forEach((books) => console.log(books.authorFirst, books.authorLast, "wrote", books.name, "in", books.publishDate));
+};
+author();
+function time() {
+  books.sort((year)=>console.log(publishDate))
+};
+time()
 const page = books.filter((word)=> {
 return word.genre = "historical"
 })
